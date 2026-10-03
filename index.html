@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kadeřnictví Česká Lípa, Okružní 2717 | Kadeřnictví Pohoda</title>
+<meta name="description" content="Kadeřnictví Pohoda v Okružní 2717 v České Lípě. Objednání na čísle 739 392 080, otevřeno pondělí až pátek 9–18. Na Googlu 35 hodnocení, průměr 4,3.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:title" content="Kadeřnictví Pohoda — Na střih i barvu se objednejte.">
+<meta property="og:description" content="Okružní 2717, Česká Lípa. Pondělí až pátek 9–18, objednání na 739 392 080.">
+<meta property="og:url" content="https://vladislavzachariev-oss.github.io/kadernictvi-pohoda/">
+<meta property="og:image" content="https://vladislavzachariev-oss.github.io/kadernictvi-pohoda/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f0ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1416" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light dark;
+  --paper:#f6f0ee;
+  --ink:#2a1d22;
+  --muted:#6d5a60;
+  --rule:#dccdd0;
+  --signal:#6b2e4a;
+  --on-signal:#fbf2f5;
+  --pad:clamp(1.25rem,5vw,3rem);
+  --display:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --text:'Karla',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#1a1416;--ink:#f1e6e9;--muted:#b5a2a8;--rule:#3d3135;--signal:#e3a6c1;--on-signal:#1a1015}
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--text);font-variant-numeric:lining-nums;overflow-wrap:break-word}
+h1,h2,p,ol,dl,figure,blockquote{margin:0}
+h1,h2{font-family:var(--display);font-weight:700;line-height:.98}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.frame{max-width:72rem;margin-inline:auto;padding-inline:var(--pad)}
+
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.2rem 1.5rem;padding-top:1rem;padding-bottom:.85rem;border-bottom:1px solid var(--ink)}
+.brand{font:700 1.4rem/1.1 var(--display)}
+.top-addr{font-size:1rem;color:var(--muted)}
+
+.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem;padding-top:2rem;padding-bottom:2.75rem}
+.hero > *{min-width:0}
+.hero h1{font-size:clamp(3rem,13.5vw,7.75rem);letter-spacing:-.01em}
+.hero h1 .sub{display:block;margin-top:.8rem;font:italic 500 clamp(1.35rem,5.4vw,2rem)/1.15 var(--display);letter-spacing:0}
+.lead{font-size:1.1875rem;line-height:1.5;max-width:31rem}
+.phone{display:block;background:var(--signal);color:var(--on-signal);text-decoration:none;padding:.75rem .9rem .85rem;border-radius:3px}
+.phone-label{display:block;font:500 1rem/1.2 var(--text)}
+.phone-num{display:block;font:700 clamp(2.8rem,14vw,6rem)/1 var(--display);white-space:nowrap;margin-top:.1rem}
+.phone:hover .phone-num{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:.1em}
+.only{font-size:1rem;color:var(--muted);max-width:30rem}
+
+.week{border-top:4px solid var(--ink);padding-top:.7rem}
+.week h2{font:500 1rem/1.25 var(--text);margin-bottom:.5rem}
+.days{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr))}
+.days li{min-width:0;border-left:1px solid var(--rule);padding:.15rem .2rem .5rem .45rem}
+.days li:first-child{border-left:0;padding-left:0}
+.days b{display:block;font:500 .9375rem/1.1 var(--text);color:var(--muted)}
+.days span{display:block;font:700 clamp(1.2rem,4.8vw,2.4rem)/1 var(--display);margin-top:.3rem}
+.days span i{display:block;font-style:normal}
+.days .shut span{font:italic 500 clamp(.95rem,3.3vw,1.35rem)/1.1 var(--display);color:var(--muted)}
+.days .today{box-shadow:inset 0 -4px 0 var(--signal)}
+.week .note{margin-top:.8rem;font-size:1rem;color:var(--muted);max-width:36rem}
+
+.band{border-top:1px solid var(--ink);padding-top:2.25rem;padding-bottom:2.75rem}
+.split{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem 3rem}
+.split > *{min-width:0}
+.split h2{font-size:clamp(2.3rem,8.5vw,3.4rem);max-width:13ch}
+.aside p{margin-top:.9rem;max-width:22rem;color:var(--muted)}
+.aside p a,.aside p strong{color:var(--ink)}
+
+.prep{list-style:none;padding:0;counter-reset:krok;display:grid;grid-template-columns:minmax(0,1fr);column-gap:2.5rem}
+.prep li{counter-increment:krok;display:grid;grid-template-columns:1.6rem minmax(0,1fr);gap:.75rem;padding-top:.9rem;padding-bottom:1.1rem;border-top:1px solid var(--rule)}
+.prep li > *{min-width:0}
+.prep li::before{content:counter(krok);font:700 1.9rem/1 var(--display)}
+.prep strong{font-weight:700}
+.ruler{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:24rem;margin-top:1.1rem;border-top:2px solid var(--ink);font-size:.9375rem;line-height:1.2;color:var(--muted)}
+.ruler span{position:relative;min-width:0;padding:.6rem .4rem 0 0}
+.ruler span::before{content:"";position:absolute;left:0;top:-.45rem;width:2px;height:.8rem;background:var(--ink)}
+
+.q{padding-top:1.4rem;padding-bottom:1.5rem;border-top:1px solid var(--rule)}
+.q:first-child{border-top:0;padding-top:0}
+.q .when{font:italic 500 1.45rem/1.1 var(--display);margin-bottom:.45rem}
+.q blockquote{font-size:1.125rem;line-height:1.55;max-width:38rem}
+.q.lead-q blockquote{font:600 clamp(1.5rem,5.4vw,2.15rem)/1.25 var(--display);max-width:40rem}
+.q figcaption{margin-top:.65rem;font-weight:700}
+.q figcaption span{font-weight:400;color:var(--muted)}
+
+.addr{font:700 clamp(2.3rem,9vw,3.8rem)/1.02 var(--display)}
+.go{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.25rem;margin-bottom:1.75rem}
+.go a{display:inline-flex;align-items:center;min-height:2.875rem;padding:0 1.1rem;border:2px solid var(--ink);border-radius:3px;text-decoration:none;font-weight:500}
+.go a:first-child{background:var(--ink);color:var(--paper)}
+.go a:hover{background:var(--signal);border-color:var(--signal);color:var(--on-signal)}
+.facts{display:grid;grid-template-columns:minmax(0,1fr);max-width:34rem}
+.facts dt{color:var(--muted);font-size:.9375rem;margin-top:.7rem}
+.facts dt:first-child{margin-top:0}
+.facts dd{margin:0}
+
+.foot{border-top:1px solid var(--ink);padding-top:1.1rem;padding-bottom:1.6rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.4rem 2rem;font-size:.9375rem;color:var(--muted)}
+
+@media (min-width:30rem){
+  .facts{grid-template-columns:minmax(0,7.5rem) minmax(0,1fr);gap:.55rem 1rem}
+  .facts dt{margin-top:0}
+}
+@media (min-width:40rem){
+  .prep{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .phone{padding:.9rem 1.2rem 1rem}
+}
+@media (min-width:56rem){
+  .hero{grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-template-areas:"h1 h1" "phone lead" "phone only" "week week";column-gap:3.5rem;row-gap:1.25rem;padding-top:3rem;padding-bottom:3.5rem}
+  .hero h1{grid-area:h1;margin-bottom:.75rem}
+  .lead{grid-area:lead;align-self:start;padding-top:.4rem}
+  .only{grid-area:only;align-self:start}
+  .phone{grid-area:phone;align-self:start;padding:1.1rem 1.4rem 1.2rem}
+  .week{grid-area:week;margin-top:1.25rem}
+  .split{grid-template-columns:minmax(0,4fr) minmax(0,8fr)}
+  .band{padding-top:3rem;padding-bottom:3.5rem}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Kadeřnictví Pohoda",
+  "telephone": "+420 739 392 080",
+  "email": "igra.k@seznam.cz",
+  "identifier": {"@type": "PropertyValue", "propertyID": "IČO", "value": "73760099"},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Okružní 2717",
+    "postalCode": "470 01",
+    "addressLocality": "Česká Lípa",
+    "addressCountry": "CZ"
+  },
+  "geo": {"@type": "GeoCoordinates", "latitude": 50.695092, "longitude": 14.536325},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00"}
+  ],
+  "hasMap": "https://www.google.com/maps/place/Kade%C5%99nictv%C3%AD+Pohoda/data=!4m7!3m6!1s0x470969554d2f2de7:0x7f673287d3ede2a0!8m2!3d50.6950919!4d14.536325!16s%2Fg%2F11hbkbtqtr!19sChIJ5y0vTVVpCUcRoOLt04cyZ38",
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.3", "bestRating": "5", "worstRating": "1", "ratingCount": "35"}
+}
+</script>
+</head>
+<body>
+
+<header class="top frame">
+  <span class="brand">Kadeřnictví Pohoda</span>
+  <span class="top-addr">Okružní 2717, Česká Lípa</span>
+</header>
+
+<main>
+
+<section class="hero frame" aria-labelledby="titulek">
+  <h1 id="titulek">Na střih i&nbsp;barvu se objednejte.<span class="sub">Kadeřnictví Pohoda v&nbsp;Okružní ulici, Česká Lípa</span></h1>
+
+  <p class="lead">Ve všední dny od devíti do šesti. Termín domluvíte po telefonu.</p>
+
+  <a class="phone" href="tel:+420739392080">
+    <span class="phone-label">Objednání</span>
+    <span class="phone-num">739 392 080</span>
+  </a>
+
+  <p class="only">Když to nikdo nebere, nejspíš se zrovna stříhá. Zkuste to za chvíli znovu, nebo napište na <a href="mailto:igra.k@seznam.cz">igra.k@seznam.cz</a>.</p>
+
+  <div class="week">
+    <h2>Otevřeno</h2>
+    <ol class="days">
+      <li data-d="1"><b>Po</b><span>9–<i>18</i></span></li>
+      <li data-d="2"><b>Út</b><span>9–<i>18</i></span></li>
+      <li data-d="3"><b>St</b><span>9–<i>18</i></span></li>
+      <li data-d="4"><b>Čt</b><span>9–<i>18</i></span></li>
+      <li data-d="5"><b>Pá</b><span>9–<i>18</i></span></li>
+      <li data-d="6" class="shut"><b>So</b><span>zavřeno</span></li>
+      <li data-d="0" class="shut"><b>Ne</b><span>zavřeno</span></li>
+    </ol>
+    <p class="note">Pondělí až pátek do šesti večer, o&nbsp;víkendu zavřeno.</p>
+  </div>
+</section>
+
+<section class="band frame" aria-labelledby="rict">
+  <div class="split">
+    <div class="aside">
+      <h2 id="rict">Co říct, až budete volat</h2>
+      <p>Podle toho se v&nbsp;salonu odhadne, kolik času si pro vás nechat.</p>
+    </div>
+    <ol class="prep">
+      <li><div><p><strong>Jak dlouhé máte vlasy.</strong> Stačí zhruba:</p>
+        <p class="ruler" aria-hidden="true"><span>nakrátko</span><span>po bradu</span><span>po ramena</span><span>pod lopatky</span></p></div></li>
+      <li><p><strong>Jestli se bude barvit.</strong> A&nbsp;jestli už barvu máte, nebo ji teprve hledáte.</p></li>
+      <li><p><strong>Jak husté vlasy máte.</strong> Husté vlasy zaberou víc času, ať se nikam nespěchá.</p></li>
+      <li><p><strong>Kdo přijde.</strong> Jestli jdete s&nbsp;někým, řekněte to hned na začátku.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band frame" id="recenze" aria-labelledby="recenze-h">
+  <div class="split">
+    <div class="aside">
+      <h2 id="recenze-h">Z&nbsp;recenzí na Googlu</h2>
+      <p><strong>23 z&nbsp;35</strong> hodnocení je pět hvězd, průměr 4,3. Zbylých dvanáct: šestkrát čtyři hvězdy, dvakrát tři, čtyřikrát jedna.</p>
+      <p><a href="https://www.google.com/maps/place/Kade%C5%99nictv%C3%AD+Pohoda/data=!4m7!3m6!1s0x470969554d2f2de7:0x7f673287d3ede2a0!8m2!3d50.6950919!4d14.536325!16s%2Fg%2F11hbkbtqtr!19sChIJ5y0vTVVpCUcRoOLt04cyZ38" target="_blank" rel="noopener">Všechny recenze v&nbsp;Mapách Google</a></p>
+    </div>
+    <div class="quotes">
+      <figure class="q lead-q">
+        <p class="when">Barva</p>
+        <blockquote>Dlouho jsem hledala svoji barvu na vlasy, a&nbsp;tady jsme ji spolu objevili.</blockquote>
+        <figcaption>Kristýna B. <span>pět hvězd</span></figcaption>
+      </figure>
+      <figure class="q">
+        <p class="when">Husté vlasy, dvě a&nbsp;půl hodiny</p>
+        <blockquote>Velky obdiv za trpelivost a&nbsp;peclivost s&nbsp;mymi vlasy. Pani kadernice me vcera strihala diky mym hustym vlasum cca 2,5&nbsp;h a&nbsp;i v&nbsp;pozdnich vecernich hodinach mi venovala maximalni peci.</blockquote>
+        <figcaption>Tereza M. <span>pět hvězd</span></figcaption>
+      </figure>
+      <figure class="q">
+        <p class="when">Představa o&nbsp;střihu</p>
+        <blockquote>Vždy přesně vědí jakou mám představu o&nbsp;střihu a&nbsp;barvě a&nbsp;tu mi splní :) nikdy bych nešla jinam!</blockquote>
+        <figcaption>Charlota H. <span>pět hvězd</span></figcaption>
+      </figure>
+      <figure class="q">
+        <p class="when">Vlasy jen tak někomu</p>
+        <blockquote>Odcházím vždycky nadšená, a&nbsp;že své vlasy jen tak někomu nesvěřím. :) Určitě doporučuji!</blockquote>
+        <figcaption>Martina P. <span>pět hvězd</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="band frame" aria-labelledby="kde">
+  <div class="split">
+    <h2 id="kde">Kde nás najdete</h2>
+    <div>
+      <p class="addr">Okružní 2717,<br> 470&nbsp;01 Česká Lípa&nbsp;1</p>
+      <p class="go">
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=50.695092%2C14.536325" target="_blank" rel="noopener">Navigovat sem</a>
+        <a href="https://www.google.com/maps/place/Kade%C5%99nictv%C3%AD+Pohoda/data=!4m7!3m6!1s0x470969554d2f2de7:0x7f673287d3ede2a0!8m2!3d50.6950919!4d14.536325!16s%2Fg%2F11hbkbtqtr!19sChIJ5y0vTVVpCUcRoOLt04cyZ38" target="_blank" rel="noopener">Otevřít v&nbsp;Mapách Google</a>
+      </p>
+      <dl class="facts">
+        <dt>Telefon</dt><dd><a href="tel:+420739392080">739 392 080</a></dd>
+        <dt>Otevřeno</dt><dd>pondělí až pátek 9–18</dd>
+        <dt>E-mail</dt><dd><a href="mailto:igra.k@seznam.cz">igra.k@seznam.cz</a></dd>
+        <dt>GPS</dt><dd>50.695092, 14.536325</dd>
+        <dt>IČO</dt><dd>73760099</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot frame">
+  <p>Kadeřnictví Pohoda, IČO 73760099</p>
+  <p>Ukázka webu — Vladislav Zachariev</p>
+</footer>
+
+<script>
+(function(){var d=new Date().getDay(),li=document.querySelector('.days li[data-d="'+d+'"]');if(li)li.classList.add('today')})();
+</script>
+</body>
+</html>
